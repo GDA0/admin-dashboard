@@ -4,6 +4,7 @@
 :root {
   --blue-color: #1992d4;
   --dark-blue-color: #157ab0;
+  --yellow-color: #eab308;
 }
 
 /* Standards */
@@ -68,4 +69,33 @@ body {
 .profile-image-2 {
   width: 72px;
   height: auto;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.card {
+  border-left: 0.5rem solid var(--yellow-color);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1rem;
+}
+
+.announcements {
+  font-size: 0.75rem;
+  height: 98%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+hr {
+  margin: 0.5rem 0;
 }
