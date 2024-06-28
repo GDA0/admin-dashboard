@@ -1,6 +1,11 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
 
+:root {
+  --blue-color: #1992d4;
+  --dark-blue-color: #157ab0;
+}
+
 /* Standards */
 h1,
 h2,
@@ -13,4 +18,28 @@ h6 {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.sidebar {
+  background-color: var(--blue-color);
+}
+
+.sidebar-item {
+  display: flex;
+  margin-left: 1rem;
+  padding: 0.25rem 0.5rem;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: var(--dark-blue-color);
+}
+
+.sidebar-item p {
+  font-weight: 500;
+  margin-bottom: 0;
 }
