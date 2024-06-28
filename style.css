@@ -20,13 +20,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.row {
+  --bs-gutter-x: unset;
+}
+
 .sidebar {
   background-color: var(--blue-color);
 }
 
 .sidebar-item {
   display: flex;
-  margin-left: 1rem;
+  margin: 0 1rem;
   padding: 0.25rem 0.5rem;
   align-items: center;
   gap: 1rem;
@@ -42,4 +46,26 @@ body {
 .sidebar-item p {
   font-weight: 500;
   margin-bottom: 0;
+}
+
+.header-top-left {
+  width: 60%;
+}
+
+.header-bottom-right button {
+  background-color: var(--blue-color);
+}
+
+.header-bottom-right button:hover {
+  background-color: var(--dark-blue-color);
+}
+
+.profile-image-1 {
+  width: 42px;
+  height: auto;
+}
+
+.profile-image-2 {
+  width: 72px;
+  height: auto;
 }
